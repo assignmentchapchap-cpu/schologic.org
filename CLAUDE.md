@@ -46,3 +46,14 @@ the key has no IP restriction.
 Safe endpoints for checking credentials:
 - `POST /api/v3/userDataStream`: needs the API key only, no signature.
 - `POST /api/v3/order/test`: validates a signed order without placing it.
+
+## Trading Lab project
+
+`trading-lab/` holds a 14-day human + AI crypto trading exercise that feeds a
+demo course for schologic.org (Schologic.com LMS). The user is a first-time
+crypto trader. Rules: document every step in `trading-lab/journal.md`; write
+every forecast down before the outcome and score it afterwards; real trades
+are small, and each needs the user's explicit approval before it is placed.
+Screening: run `python3 trading-lab/screen.py`. Pairs in `BREAK` status are
+halted or delisting, so the screen excludes them; never treat their moves as
+opportunities.
