@@ -35,6 +35,14 @@ Setup that can work:
 3. Use a key with withdrawals disabled, trading disabled unless needed, and no
    IP restriction (or one that matches the container's egress).
 
+Status update (2026-10-08, later): the secret is now available as env var
+`secretkey` (sign with `openssl dgst -sha256 -hmac "$secretkey"`). The proxy
+no longer fails on GET/empty-body requests. But both the key-only
+`userDataStream` and a correctly signed `/api/v3/account` still return
+`-2015`, so the API key itself is rejected: check the injected header is
+named exactly `X-MBX-APIKEY`, the key is the one paired with this secret, and
+the key has no IP restriction.
+
 Safe endpoints for checking credentials:
 - `POST /api/v3/userDataStream`: needs the API key only, no signature.
 - `POST /api/v3/order/test`: validates a signed order without placing it.
