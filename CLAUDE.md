@@ -57,3 +57,7 @@ are small, and each needs the user's explicit approval before it is placed.
 Screening: run `python3 trading-lab/screen.py`. Pairs in `BREAK` status are
 halted or delisting, so the screen excludes them; never treat their moves as
 opportunities.
+
+Reference: `trading-lab/reference/binance-skills-index.md` indexes the 20 skills in
+`assignmentchapchap-cpu/binance-skills-hub` (Binance.com / Web3, not Binance.US). Check it
+before cloning or re-reading that repo.

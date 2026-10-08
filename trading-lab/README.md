@@ -40,3 +40,4 @@ Everything is documented as it happens, including mistakes.
 - `screen.py`: ranks liquid Binance.US pairs by volatility and deviation.
 - `data/`: dated screen outputs (CSV).
 - `journal.md`: running log of decisions, forecasts and results.
+- `reference/binance-skills-index.md`: what each Binance Skills Hub skill does and whether it helps us.
