@@ -153,3 +153,33 @@ PUMP 0.00528) becomes the next line to watch.
 
 *Educational information, not personalized financial advice. Crypto assets can lose
 substantial value.*
+
+## 2026-10-09 06:23 UTC: F001 6h results
+
+Scored automatically by `forecast.py score` (price at 06:00 UTC vs 00:00 UTC).
+
+| Coin | Change | In 68% range? | In 90% range? |
+|---|---|---|---|
+| ZEC | +2.75% | Yes (near the top) | Yes |
+| NEAR | **+8.21%** | No | **No** |
+| SUI | +2.90% | No (just above: 1.0711 vs 1.0710) | Yes |
+| ADA | +1.80% | Yes | Yes |
+| PUMP | +1.07% | Yes | Yes |
+| BTC | +0.78% | Yes | Yes |
+
+**Hit rate:** 4 of 6 inside the 68% range (expected about 4), and 5 of 6 inside the 90%
+range (expected about 5.4). Too few forecasts to judge calibration yet, but no sign of
+trouble.
+
+**Direction:** no calls at 6h (all 50%), so no score. Every coin rose: the bounce
+continued and the "trend down" side lost this round. Our 12h and 24h forecasts lean
+lower, so they are currently behind.
+
+**The surprise: NEAR +8.2%, outside even the 90% range.** No new NEAR news after
+20:00 UTC on 8 Oct (Cryptowisser). The likely explanation is a rebound: NEAR had fallen
+the most (-16% in 24h) and had the lowest RSI (33), so it had the most room to snap back.
+Its thin Binance.US order book (0.56% spread) also makes moves bigger in both directions.
+This is the course lesson: the coin that falls hardest often bounces hardest, which is
+why "normal" ranges understate the risk in volatile coins.
+
+**Next:** 12h scoring at 12:05 UTC.
