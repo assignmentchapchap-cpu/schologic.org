@@ -183,3 +183,42 @@ This is the course lesson: the coin that falls hardest often bounces hardest, wh
 why "normal" ranges understate the risk in volatile coins.
 
 **Next:** 12h scoring at 12:05 UTC.
+
+## 2026-10-09 12:06 UTC: F001 12h results
+
+| Coin | Change | Our chance-higher | In 68%? | In 90%? | Direction | Brier |
+|---|---|---|---|---|---|---|
+| ZEC | +4.09% | 50 (no call) | Yes | Yes | — | 0.250 |
+| NEAR | +9.19% | 47 | No | Yes | Wrong | 0.281 |
+| SUI | +2.85% | 47 | Yes | Yes | Wrong | 0.281 |
+| ADA | +2.32% | 47 | Yes | Yes | Wrong | 0.281 |
+| PUMP | +3.30% | 45 | Yes | Yes | Wrong | 0.303 |
+| BTC | +1.76% | 48 | No | Yes | Wrong | 0.270 |
+
+**Ranges:** 4 of 6 in the 68% range (expected ~4), 6 of 6 in the 90% range. So far the
+ranges look honest.
+
+**Direction:** all five leans ("slightly lower") were wrong. Every coin kept rising.
+Average Brier 0.278, a little worse than a coin flip (0.25). Because the leans were weak
+(45–48%), being wrong cost little. That's the point of keeping leans small when the
+evidence is weak.
+
+**Our own warning sign fired.** At 00:00 we wrote that BTC reclaiming its 20-hour
+average (~$82,100) would weaken the "lower" view. BTC is now ~$83,190. The forecasts are
+locked once made, so we don't edit them. The correct response is to carry the lesson into
+the next run: when the stated invalidation level breaks, drop the lean.
+
+**News since 00:00 (Cryptowisser):** nothing coin-specific. The main headline is ESMA
+ordering EU exchanges to stop USDT withdrawals by 8 January
+([link](https://www.cryptowisser.com/news/eu-regulator-orders-usdt-withdrawals-off-exchanges-by-january-8/)),
+published 09:10 UTC; prices kept rising after it, so it does not explain the move. The
+rally looks like a market-wide recovery after the 8 Oct sell-off.
+
+**Lessons so far:**
+1. After a sharp sell-off, "trend is down" was a weaker signal than "it already fell a lot".
+2. The ranges did their job; the direction leans did not. A beginner method should
+   lean on ranges (how far it might move) more than on calls (which way).
+3. Write down what would change your mind *before* the outcome. It made the miss easy
+   to diagnose.
+
+**Next:** 24h scoring and full review at 00:05 UTC on 10 Oct.
