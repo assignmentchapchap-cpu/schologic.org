@@ -222,3 +222,63 @@ rally looks like a market-wide recovery after the 8 Oct sell-off.
    to diagnose.
 
 **Next:** 24h scoring and full review at 00:05 UTC on 10 Oct.
+
+## 2026-10-10 00:05 UTC, Day 3: F001 24h results and full review
+
+### 24h results
+
+| Coin | Change | Our chance-higher | In 68%? | In 90%? | Direction | Brier |
+|---|---|---|---|---|---|---|
+| ZEC | +1.57% | 50 (no call) | Yes | Yes | — | 0.250 |
+| NEAR | +9.28% | 45 | No | Yes | Wrong | 0.303 |
+| SUI | +2.90% | 45 | Yes | Yes | Wrong | 0.303 |
+| ADA | +3.62% | 45 | Yes | Yes | Wrong | 0.303 |
+| PUMP | **-1.45%** | 42 | Yes | Yes | **Right** | 0.176 |
+| BTC | +1.08% | 47 | Yes | Yes | Wrong | 0.281 |
+
+### Whole run (18 forecasts)
+
+| Horizon | In 68% range | In 90% range | Direction calls right | Avg Brier |
+|---|---|---|---|---|
+| 6h | 4 / 6 | 5 / 6 | no calls | 0.250 |
+| 12h | 4 / 6 | 6 / 6 | 0 / 5 | 0.278 |
+| 24h | 5 / 6 | 6 / 6 | 1 / 5 | 0.269 |
+| **All** | **13 / 18 (72%)** | **17 / 18 (94%)** | **1 / 10** | **0.266** |
+
+(Coin-flip Brier = 0.250. Lower is better.)
+
+### What we learned
+1. **The ranges work.** 72% landed in the "68%" range and 94% in the "90%" range, close
+   to what an honest method should produce. "How far could it move?" is answerable.
+2. **The direction calls didn't.** 1 of 10 right, Brier 0.266, slightly worse than
+   guessing. We leaned "lower" because of a downtrend; the market rebounded instead.
+   Because the leans were small (42–48%), the damage was small. Small bets on weak
+   views is the right habit.
+3. **Ten calls were really one call.** All the coins moved together with the market, so
+   our five "lower" leans were one bet on the market, repeated five times. Results
+   that move together can't be counted as separate evidence. One run tells us very
+   little about skill.
+4. **NEAR broke out of its 68% range at every horizon (+8–9%).** No coin-specific news.
+   It had fallen hardest and has the thinnest Binance.US market. The coin that falls the
+   most can rebound the most; for thin markets, the "normal" range is too narrow.
+5. **PUMP was the only coin to fall, and our strongest lean was on it.** That's one data
+   point, not proof, but it fits the reasoning: no news support and a weak risk appetite.
+6. **Our own invalidation signal worked.** We said BTC above ~$82,100 would weaken the
+   "lower" view; it went there within hours. Writing that down in advance made the miss
+   easy to explain.
+
+Market context: BTC ETFs saw $238M of outflows on 8 Oct, and QCP expects an
+$80,000–$90,000 range for Q4 (Cryptowisser,
+[Bitcoin Slips Below $82K as ETFs Shed $238M](https://www.cryptowisser.com/news/bitcoin-slips-below-82k-as-etfs-shed-238m-in-a-day/)).
+BTC ended the 24h at $82,636, inside that range.
+
+### Method changes for the next run (F002)
+- **Keep the range method unchanged.** It is performing as designed, and changing it
+  after one run would be fitting to noise.
+- **Default every lean to 50%.** Move off 50% only with a written, checkable reason that
+  is *specific to the coin* (news, liquidity, a broken level), not a general market mood.
+- **One market view, not five.** If there is a market-wide view, express it once (on BTC)
+  and keep the coins at 50% unless they have their own reason.
+- **Flag thin markets.** For coins with a spread above 0.3% (NEAR), say in advance that
+  the range is likely too narrow.
+- **Run the same method several times** before judging it. One day is one market mood.
